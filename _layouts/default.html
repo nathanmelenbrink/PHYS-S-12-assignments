@@ -3,14 +3,14 @@
  <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.scss">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
   </head>
 
   <!-- {%- include head.html -%} -->
 
   <body>
 
-     {%- include footer.html -%}
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
